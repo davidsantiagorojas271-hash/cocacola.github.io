@@ -1,0 +1,249 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coca-Cola | Proyecto Empresarial y Científico</title>
+<link rel="icon" type="image/png" href="https://upload.wikimedia.org/wikipedia/commons/1/1b/Coca-Cola_logo_icon.png">
+
+<!-- Seguridad y compatibilidad -->
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta name="referrer" content="no-referrer">
+<meta name="permissions-policy" content="geolocation=(), microphone=(), camera=()">
+<meta name="author" content="Proyecto Educativo Coca-Cola">
+<meta name="description" content="Proyecto Educativo Coca-Cola - Innovación, ciencia e industrialización de bebidas.">
+<link rel="canonical" href="https://tusitio.wixsite.com/cocacola">
+
+<!-- Íconos seguros -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #222;
+  overflow-x: hidden;
+}
+
+/* Fondo con burbujas */
+.bubbles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  background: radial-gradient(circle at bottom, #ff0000, #900000);
+}
+.bubble {
+  position: absolute;
+  bottom: -50px;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.8), rgba(255,255,255,0.2));
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255,255,255,0.4);
+  animation: rise 10s infinite ease-in, glow 5s infinite ease-in-out;
+  transition: transform 0.5s ease;
+}
+
+/* Animaciones */
+@keyframes rise {
+  from {transform: translateY(0) scale(1); opacity: 1;}
+  to {transform: translateY(-110vh) scale(1.2); opacity: 0;}
+}
+@keyframes glow {
+  0% {box-shadow: 0 0 10px rgba(255,255,255,0.3);}
+  50% {box-shadow: 0 0 30px rgba(255,255,255,0.8);}
+  100% {box-shadow: 0 0 10px rgba(255,255,255,0.3);}
+}
+
+header {
+  background: rgba(179, 0, 0, 0.9);
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+header img {width: 180px;}
+h1, h2 {
+  text-align: center;
+  color: #b30000;
+}
+h2 i {
+  color: #b30000;
+  margin-right: 10px;
+}
+section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+section:hover {transform: scale(1.02);}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #b30000;
+  color: white;
+  font-size: 14px;
+  margin-top: 50px;
+}
+
+/* Banner cookies */
+#cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.9);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  display: none;
+  z-index: 9999;
+  animation: fadeIn 1s ease;
+}
+#cookie-banner button {
+  background: #b30000;
+  color: white;
+  border: none;
+  margin-left: 10px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#cookie-banner button:hover {background:#ff0000;}
+
+@keyframes fadeIn {from {opacity:0;} to {opacity:1;}}
+</style>
+</head>
+
+<body>
+<div class="bubbles"></div>
+
+<header>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Coca-Cola_logo.svg" alt="Logo Coca-Cola">
+  <h1 style="color:black;">Proyecto Empresarial y Científico Coca-Cola</h1>
+  <p>Innovación, sostenibilidad y ciencia aplicada en la industria de bebidas</p>
+</header>
+
+<section>
+  <h2><i class="fa-solid fa-building"></i>Sobre Nuestra Empresa</h2>
+  <p><strong>Misión:</strong> Ofrecer bebidas refrescantes y de alta calidad mediante procesos sostenibles y científicos.</p>
+  <p><strong>Visión:</strong> Ser líderes en innovación y sostenibilidad, aplicando la ciencia avanzada para mejorar cada producto.</p>
+  <p><strong>Valores:</strong> Innovación, Calidad, Sostenibilidad, Transparencia, Integridad.</p>
+</section>
+
+<section>
+  <h2><i class="fa-solid fa-users"></i>Estructura Organizacional</h2>
+  <ul>
+    <li><b>Director General (CEO):</b> Define la estrategia global y rentabilidad.</li>
+    <li><b>Director de Operaciones (COO):</b> Supervisa producción y cadena de suministro.</li>
+    <li><b>Jefe de Calidad e I+D:</b> Controla el pH, temperatura e investiga nuevas formulaciones.</li>
+    <li><b>Jefe de Marketing:</b> Desarrolla estrategias y campañas publicitarias.</li>
+    <li><b>Recursos Humanos:</b> Selección, capacitación y bienestar laboral.</li>
+  </ul>
+</section>
+
+<section>
+  <h2><i class="fa-solid fa-gears"></i>Proceso de Industrialización</h2>
+  <p>El proceso industrial de Coca-Cola integra ingeniería, control y ciencia para garantizar uniformidad y calidad mundial.</p>
+  <ul>
+    <li><b>1. Preparación del Jarabe:</b> Mezcla precisa de azúcar, agua y extractos naturales.</li>
+    <li><b>2. Tratamiento del Agua:</b> Ósmosis inversa y filtración activa.</li>
+    <li><b>3. Carbonatación:</b> Inyección de CO₂ con control de presión y temperatura.</li>
+    <li><b>4. Envasado Automatizado:</b> Llenado, sellado y etiquetado digital.</li>
+    <li><b>5. Control de Calidad:</b> Verificación del pH, densidad y contenido gaseoso.</li>
+  </ul>
+</section>
+
+<section>
+  <h2><i class="fa-solid fa-atom"></i>Aplicaciones de la Física y la Química</h2>
+  <p>Las ciencias exactas permiten optimizar los procesos de producción, conservación y calidad del producto final.</p>
+  <ul>
+    <li><b>Física:</b> 
+      <ul>
+        <li>Principios de presión y temperatura aplicados en la carbonatación.</li>
+        <li>Termodinámica para enfriamiento y pasteurización.</li>
+        <li>Mecánica de fluidos para el llenado automatizado.</li>
+      </ul>
+    </li>
+    <li><b>Química:</b>
+      <ul>
+        <li>Control del pH y equilibrio químico.</li>
+        <li>Reacciones enzimáticas en la hidrólisis de azúcares.</li>
+        <li>Conservantes y antioxidantes naturales para estabilidad del producto.</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+<section>
+  <h2><i class="fa-solid fa-flask-vial"></i>Proyecto Científico: Simulación de Hidrólisis y Control de pH</h2>
+  <p>Demuestra cómo factores industriales como el pH, la temperatura y las enzimas afectan la estabilidad de las bebidas.</p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Coca-Cola_bottle_200ml.jpg" alt="Proyecto Coca-Cola" style="display:block;margin:30px auto;width:70%;border-radius:15px;box-shadow:0 0 15px rgba(0,0,0,0.2);">
+</section>
+
+<section>
+  <h2><i class="fa-solid fa-lightbulb"></i>Tecnología e Innovación</h2>
+  <p>Uso de IA, Big Data e IoT para optimizar la producción y garantizar transparencia mediante Blockchain.</p>
+</section>
+
+<section>
+  <h2><i class="fa-solid fa-wrench"></i>Recomendaciones y Mejoras</h2>
+  <ul>
+    <li>Automatizar control de pH con sensores inteligentes.</li>
+    <li>Reutilizar energía térmica para eficiencia energética.</li>
+    <li>Simular procesos industriales con gemelos digitales.</li>
+    <li>Fomentar reciclaje y trazabilidad con Blockchain.</li>
+  </ul>
+</section>
+
+<section>
+  <h2><i class="fa-solid fa-shield-halved"></i>Política de Privacidad y Seguridad Web</h2>
+  <p>El sitio usa <strong>HTTPS</strong>, bloquea scripts inseguros y cumple normas OWASP. No recopila datos personales.</p>
+</section>
+
+<footer>
+  © 2025 Proyecto Educativo Coca-Cola | Hanier Gómez, Santiago Ariza, Juan David Silva, Kevin Amaya
+</footer>
+
+<div id="cookie-banner">
+  Este sitio utiliza cookies técnicas esenciales. No se recopilan datos personales.
+  <button id="accept-cookies">Aceptar</button>
+</div>
+
+<script>
+// Animación burbujas
+const numBubbles = 40;
+const container = document.querySelector('.bubbles');
+for (let i = 0; i < numBubbles; i++) {
+  const b = document.createElement('div');
+  b.classList.add('bubble');
+  const size = Math.random() * 60 + 20;
+  b.style.width = `${size}px`;
+  b.style.height = `${size}px`;
+  b.style.left = `${Math.random() * 100}%`;
+  b.style.animationDuration = `${8 + Math.random() * 8}s`;
+  b.style.animationDelay = `${Math.random() * 5}s`;
+  container.appendChild(b);
+}
+
+// Cookies
+if (!localStorage.getItem('cookiesAccepted')) {
+  document.getElementById('cookie-banner').style.display = 'block';
+}
+document.getElementById('accept-cookies').addEventListener('click', () => {
+  localStorage.setItem('cookiesAccepted', 'true');
+  document.getElementById('cookie-banner').style.display = 'none';
+});
+</script>
+
+</body>
+</html>
